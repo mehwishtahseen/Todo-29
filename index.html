@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>To Do List</title>
+    <link rel="shortcut icon" href="FavIcon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>To Do list</h1>
+      <div class="inputtask">
+        <!-- This is to take Input of the task from user 
+        Task Id is given to input to use it in js
+        Onkeypress is a predefined function to use keyboard keys to submit result
+        Here for using Enter key  -->
+        <input
+          type="text"
+          placeholder="Write your Task here ... "
+          id="task"
+          onkeypress="if(event.keyCode===13){ taskinput(); }"
+        />
+        <!-- Onlclick taskinput function is used here to take value from user -->
+        <button onclick="taskinput()">Add</button>
+      </div>
+      <div class="status">
+        <!-- Id total compi incompi are given to manage number of 
+        completed pending and total tasks -->
+        <p>• Total Tasks : <span id="total">0</span></p>
+      </div>
+      <!-- Id incompi and compi is given to manage all tasks  -->
+      <div class="giventasks hide" id="hide">
+        <div class="pendingtasks">
+          <h2>Pending Tasks (<span id="incompi">0</span>)</h2>
+          <div class="underline"></div>
+          <div class="listitems" id="pendingTask"></div>
+        </div>
+        <div class="completedtask">
+          <h2>Completed Tasks (<span id="compi">0</span>)</h2>
+          <div class="underline"></div>
+          <div class="listitems" id="completedTask"></div>
+        </div>
+      </div>
+    </div>
+    <h1 class="Ending"><b>M.T</b></h1>
+    <p class="End"><i>Mehwish Tahseen</i> © All Rights Reserved</p>
+    <script src="script.js"></script>
+  </body>
+</html>

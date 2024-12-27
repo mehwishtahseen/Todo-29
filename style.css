@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100;200;300;400;500;600;700;800;900&family=Mooli&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mooli", sans-serif;
+}
+body {
+  background-color: #3fd0c9;
+}
+button:hover {
+  cursor: pointer;
+}
+.container {
+  width: 780px;
+  background-color: #11847c;
+  margin: 32px auto;
+  border-radius: 22px;
+  padding: 32px;
+}
+.container h1 {
+  text-align: center;
+  font-size: 39px;
+  margin: 10px 0;
+  color: #c1f6ed;
+}
+.inputtask {
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+}
+.inputtask input {
+  background-color: #c1f6ed;
+  padding: 0 16px;
+  height: 48px;
+  width: 100%;
+  border-radius: 16px;
+  border: none;
+}
+.inputtask input:focus::placeholder {
+  color: #a15050;
+  border: none;
+}
+.inputtask button {
+  background-color: #c1f6ed;
+  width: 80px;
+  height: 48px;
+  border-radius: 15px;
+  border: none;
+}
+.status {
+  text-align: center;
+  margin: 8px;
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #c1f6ed;
+}
+.listitems {
+  margin-top: 20px;
+}
+.task {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #017770;
+  padding: 16px;
+  font-size: 16px;
+  color: #017770;
+  margin: 0 20px 8px 20px;
+  border-radius: 12px;
+  gap: 16px;
+  text-align: left;
+  line-height: 24px;
+  align-items: center;
+}
+.task span {
+  width: 100%;
+  line-height: 24px;
+}
+.fa-square,
+.fa-square-check {
+  font-size: 15px;
+  line-height: 24px;
+}
+.fa-circle-xmark {
+  font-size: 15px;
+  line-height: 24px;
+}
+.fa-regular:hover {
+  cursor: pointer;
+}
+.fa-solid:hover {
+  cursor: pointer;
+}
+.giventasks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin: 18px 10px;
+  padding: 8px;
+}
+.pendingtasks,
+.completedtask {
+  background-color: #c1f6ed;
+  border-radius: 16px;
+  padding: 16px;
+}
+.underline {
+  background-color: #017770;
+  margin: 2px 46px;
+  height: 1px;
+}
+.pendingtasks h2,
+.completedtask h2 {
+  line-height: 2;
+  font-size: 18px;
+  font-weight: 400;
+  color: #017770;
+  text-align: center;
+}
+.Ending {
+  color: #017770;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 12px;
+}
+.End {
+  color: #017770;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+.hide {
+  display: none;
+}
+
+/* For Screen view */
+@media only screen and (max-width: 536px) {
+  body {
+    padding: 16px;
+  }
+  .container {
+    width: 100%;
+    margin: auto;
+    padding: 16px;
+  }
+  .container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .inputtask {
+    gap: 8px;
+    padding: 2px;
+  }
+  .inputtask button {
+    width: 60px;
+    border-radius: 12px;
+  }
+  .status {
+    margin-top: 18px;
+  }
+  .task {
+    padding: 10px;
+    margin: 0 12px 8px 12px;
+    border-radius: 12px;
+    gap: 12px;
+    align-items: center;
+  }
+  .giventasks {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 18px 3px;
+    padding: 4px;
+  }
+  .pendingtasks,
+  .completedtask {
+    padding: 8px;
+  }
+  .underline {
+    margin: 2px 44px;
+  }
+  .fa-square,
+  .fa-square-check {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .fa-circle-xmark {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .End {
+    font-size: 14px;
+  }
+}
